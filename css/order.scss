@@ -1,8 +1,10 @@
 .order-section {
    background: url(/img/decor/orderback.jpg) no-repeat;
-   background-size: 100%;
+   background-size: cover;
+   background-position: center;
+   height: 100vh;
 }
 
 .order-title {
-   margin-bottom: 35px;
+   margin-bottom: rem(35px);
 }

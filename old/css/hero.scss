@@ -1,0 +1,56 @@
+.hero {
+   background: url("/img/decor/big-leaf.png ") right bottom no-repeat;
+   background-color: $blue;
+   height: 100vh;
+   min-height: 650px;
+   color: #fff;
+   position: relative;
+
+
+   &:before {
+      position: absolute;
+      bottom: -40px;
+      left: 2%;
+      content: url("/img/decor/corner-leaf.png");
+   }
+
+   &::after {
+      content: url("/img/decor/berry.png");
+      position: absolute;
+      bottom: -40px;
+      right: 0;
+   }
+}
+
+
+
+.cont__logo {
+   display: block;
+   position: relative;
+   height: 38px;
+   width: 53px;
+}
+
+.hero__title-section {
+   width: 44%;
+}
+
+.hero__main-title {
+   font-weight: bold;
+   font-size: 48px;
+   line-height: 1.2;
+   margin-bottom: 5px;
+   text-transform: uppercase;
+}
+
+.hero__title-desc {
+   font-size: 21px;
+   margin-bottom: 49px;
+   padding-right: 10%;
+   line-height: 1.2;
+
+}
+
+.btn__cont {
+   margin-left: 7px;
+}

@@ -1,11 +1,26 @@
 .benefits-section {
-   position: relative;
+   display: flex;
+   height: 100vh;
+   // position: relative;
    background: url(/img/decor/side-leaf.png) left center no-repeat;
+
+   @include phones {
+      background: none;
+   }
 
    &:before {
       position: absolute;
-      bottom: -150px;
+      bottom: rem(-150px);
       content: url("/img/decor/side-berry.png");
+
+      @include phones {
+         display: none;
+      }
+
    }
 
+}
+
+.benefits__container {
+   height: 100vh;
 }

@@ -1,0 +1,50 @@
+.footer {
+   position: relative;
+
+   bottom: 0;
+   left: 0;
+   right: 0;
+   padding: rem(25px) 0;
+   background: #fff;
+
+
+}
+
+.footer__container {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   @include tablets {
+      flex-direction: column;
+
+   }
+
+}
+
+.contacts {
+   color: #010101;
+
+   @include tablets {
+      flex-direction: column;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+
+   }
+}
+
+.contacts__place {
+   font-family: Alegreya Sans;
+   font-size: rem(21px);
+   font-style: normal;
+   font-weight: 400;
+   line-height: rem(24px);
+
+
+
+}
+
+.phone-number--theme-green {
+   color: $darkgreen;
+}

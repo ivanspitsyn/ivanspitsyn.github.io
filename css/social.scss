@@ -1,0 +1,16 @@
+.social {
+   display: flex;
+
+}
+
+.social__list {
+   display: block;
+   align-items: center;
+   text-align: center;
+}
+
+.social__item {
+   display: inline-flex;
+   margin-right: 3px;
+
+}

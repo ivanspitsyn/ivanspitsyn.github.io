@@ -1,9 +1,20 @@
-$containerWidth: 940px;
+$containerWidth: 1080px;
 $baseFontSize:18px;
+$tsw:100vw;
+
+
+//breackpoints
+$screen: 1080px;
+$tablets: 768px;
+$phones: 480px;
+
+
 
 //colors
 $blue: #61c4d9;
 $darkgreen: #0b4d3c;
+@import "media.scss";
+
 
 //z-indexes
 $z-fixed-menu:100;
@@ -13,8 +24,13 @@ $z-fixed-menu:100;
 
 //setup
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;700;800&display=swap');
+
 @import "layout.scss";
+@import "svg.scss";
+@import "contacts.scss";
 @import "hero.scss";
+@import "menu.scss";
+@import "hamburger.scss";
 @import "header.scss";
 @import "features.scss";
 @import "feature.scss";
@@ -30,3 +46,5 @@ $z-fixed-menu:100;
 @import "form.scss";
 @import "radio.scss";
 @import "fixed-menu.scss";
+@import "footer.scss";
+@import "social.scss";

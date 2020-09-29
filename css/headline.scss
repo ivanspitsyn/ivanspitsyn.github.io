@@ -1,12 +1,26 @@
 .headline {
    text-align: center;
+   margin-top: 278px;
 }
 
-.headline__title {}
+.headline__title {
+   margin-bottom: 4px;
+}
 
 .headline__subtitle {
-   padding: 0 26%;
-   font-size: 18px;
+   padding: 0 20%;
+   font-size: rem(18px);
    line-height: 1.2;
-   margin-bottom: 50px;
+   margin-bottom: rem(42px);
+
+   @include phones {
+      padding: 0 5%;
+   }
+}
+
+.phone-number {
+   font-size: rem(24px);
+   text-decoration: none;
+   display: flex;
+   align-items: baseline;
 }
