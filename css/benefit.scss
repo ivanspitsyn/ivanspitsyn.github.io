@@ -26,9 +26,12 @@
 }
 
 .benefit__image-wrapper {
-   display: inline-block;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
    width: rem(126px);
    height: rem(126px);
+
    position: relative;
    background: #f2f5f4;
    border-radius: 50%;
