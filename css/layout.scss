@@ -2,7 +2,7 @@ html {
    font-size: $baseFontSize;
 
    @include tablets {
-      font-size: $baseFontSize - 1px;
+      font-size: $baseFontSize - 5px;
    }
 
    @include phones {

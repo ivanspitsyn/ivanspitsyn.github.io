@@ -54,12 +54,13 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      // justify-content: center;
       align-items: center;
       text-align: center;
 
       &:before {
          content: "";
+
          width: 316px;
          height: 330px;
          background: url(/img/decor/wel_choko.png) center center / contain no-repeat;
@@ -79,7 +80,7 @@
    flex-direction: column;
    justify-content: space-between;
    height: 100%;
-   padding: rem(25px) 0 rem(35px) 0;
+   padding: rem(5px) 0 rem(15px) 0;
    background: url("/img/decor/chocolates.png") right center / 48% auto no-repeat;
 
    @include tablets {
