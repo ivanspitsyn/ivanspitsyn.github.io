@@ -205,6 +205,11 @@ img {
   margin-bottom: 0.8333333333rem;
   text-transform: uppercase;
 }
+@media screen and (max-width: 768px) {
+  .hero__main-title {
+    font-size: 2.2222222222rem;
+  }
+}
 
 .hero__title-desc {
   font-size: 1.1666666667rem;
@@ -334,6 +339,7 @@ img {
 @media screen and (max-width: 768px) {
   .header {
     justify-content: space-between;
+    margin-bottom: 1.1111111111rem;
   }
 }
 

@@ -97,6 +97,10 @@
    margin-top: rem(15px);
    margin-bottom: rem(15px);
    text-transform: uppercase;
+
+   @include tablets {
+      font-size: rem(40px);
+   }
 }
 
 .hero__title-desc {
