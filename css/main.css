@@ -122,6 +122,26 @@ img {
   width: 20px;
 }
 
+.product__arrow {
+  fill: black;
+  height: 22px;
+  width: 22px;
+  transform: rotate(180deg);
+}
+
+.product__sos {
+  fill: black;
+  height: 92px;
+  width: 92px;
+  transform: rotate(180deg);
+}
+
+.product__arrow-right {
+  fill: black;
+  height: 22px;
+  width: 22px;
+}
+
 .phone-number {
   font-size: 1.3333333333rem;
   text-decoration: none;
@@ -657,6 +677,135 @@ img {
 
 .benefits__container {
   height: 100vh;
+}
+
+.product-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.slider__arrow {
+  display: flex;
+  align-items: center;
+}
+
+.product__item-content {
+  width: 50%;
+}
+
+.product__item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .product__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.product__item-image {
+  height: 386px;
+  width: 363px;
+  margin-right: 2.4444444444rem;
+  background: url("/img/product/choccos.png ") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .product__item-image {
+    height: 246px;
+    width: 263px;
+    background: url("/img/product/choccos.png ") no-repeat;
+    background-size: contain;
+  }
+}
+
+.item__ingredients {
+  margin-bottom: 23px;
+  height: 90px;
+  width: 90px;
+  background: url("/img/product/ingred.png ") no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  .item__ingredients {
+    display: none;
+  }
+}
+
+.product__item-title {
+  margin-bottom: 23px;
+  font-weight: bold;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.product__item-subtitle {
+  margin-bottom: 23px;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.product__item-property {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .product__item-property {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.product__item-callories {
+  margin-right: 44px;
+}
+
+.product__item-calories-value {
+  margin-bottom: 24px;
+  font-weight: bold;
+  font-size: 1rem;
+  line-height: 1.2;
+}
+
+.product__item-buy {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (max-width: 768px) {
+  .product__item-buy {
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+.product__item-price {
+  margin-bottom: 23px;
+  font-weight: 300;
+  font-size: 3.3333333333rem;
+  line-height: 1.2;
+  text-align: center;
+  align-items: center;
+}
+
+.btncont2 {
+  margin-top: 8px;
+  margin-left: 10px;
+}
+@media screen and (max-width: 768px) {
+  .btncont2 {
+    margin-bottom: 26px;
+  }
 }
 
 .reviews-section {

@@ -1,0 +1,133 @@
+ .product-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+
+ }
+
+ .slider__arrow {
+    display: flex;
+    align-items: center;
+ }
+
+ .product__item-content {
+    width: 50%;
+ }
+
+ .product__item {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+       text-align: center;
+    }
+ }
+
+ .product__item-image {
+    height: 386px;
+    width: 363px;
+    margin-right: rem(44px);
+    background: url("/img/product/choccos.png ") no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include tablets {
+       height: 246px;
+       width: 263px;
+       background: url("/img/product/choccos.png ") no-repeat;
+       background-size: contain;
+    }
+ }
+
+ .item__ingredients {
+    margin-bottom: 23px;
+    height: 90px;
+    width: 90px;
+    background: url("/img/product/ingred.png ") no-repeat;
+    background-size: contain;
+    background-position: center;
+
+    @include tablets {
+       display: none;
+    }
+ }
+
+ .product__item-title {
+    margin-bottom: 23px;
+    font-weight: bold;
+    font-size: rem(36px);
+    line-height: 1.2;
+ }
+
+ .product__item-subtitle {
+    margin-bottom: 23px;
+    font-weight: normal;
+    font-size: rem(18px);
+    line-height: 1.2;
+ }
+
+ .product__item-property {
+    display: flex;
+    flex-direction: row;
+
+    @include tablets {
+       flex-direction: row;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+    }
+ }
+
+ .product__item-callories {
+    margin-right: 44px;
+
+
+ }
+
+ .product__item-calories-value {
+    margin-bottom: 24px;
+    font-weight: bold;
+    font-size: rem(18px);
+    line-height: 1.2;
+
+ }
+
+ .product__item-buy {
+    display: flex;
+    flex-direction: row;
+
+    @include tablets {
+       flex-direction: row;
+       align-items: center;
+       text-align: center;
+       justify-content: center;
+    }
+ }
+
+ .product__item-price {
+
+    margin-bottom: 23px;
+    font-weight: 300;
+    font-size: rem(60px);
+    line-height: 1.2;
+    text-align: center;
+    align-items: center;
+ }
+
+ .btncont2 {
+    margin-top: 8px;
+    margin-left: 10px;
+
+    @include tablets {
+       margin-bottom: 26px;
+
+    }
+
+
+ }
