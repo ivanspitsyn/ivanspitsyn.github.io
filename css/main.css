@@ -688,6 +688,7 @@ img {
 .slider__arrow {
   display: flex;
   align-items: center;
+  cursor: pointer;
 }
 
 .product__item-content {
@@ -776,6 +777,10 @@ img {
   line-height: 1.2;
 }
 
+.product__item-calories-value {
+  white-space: nowrap;
+}
+
 .product__item-buy {
   display: flex;
   flex-direction: row;
@@ -796,6 +801,13 @@ img {
   line-height: 1.2;
   text-align: center;
   align-items: center;
+  white-space: nowrap;
+}
+@media screen and (max-width: 768px) {
+  .product__item-price {
+    width: 200px;
+    font-size: 2.1111111111rem;
+  }
 }
 
 .btncont2 {

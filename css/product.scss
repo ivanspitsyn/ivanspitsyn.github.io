@@ -10,6 +10,7 @@
  .slider__arrow {
     display: flex;
     align-items: center;
+    cursor: pointer;
  }
 
  .product__item-content {
@@ -98,11 +99,16 @@
 
  }
 
+ .product__item-calories-value {
+    white-space: nowrap;
+ }
+
  .product__item-buy {
     display: flex;
     flex-direction: row;
 
     @include tablets {
+
        flex-direction: row;
        align-items: center;
        text-align: center;
@@ -118,6 +124,14 @@
     line-height: 1.2;
     text-align: center;
     align-items: center;
+
+    white-space: nowrap;
+
+    @include tablets {
+       width: 200px;
+       font-size: rem(38px);
+
+    }
  }
 
  .btncont2 {
