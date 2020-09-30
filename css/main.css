@@ -273,16 +273,17 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-  .menu.menu--active {
+  .menu--active {
+    transition: 0.1s;
     display: flex;
     position: fixed;
     top: 0;
     left: 0;
     height: 100%;
     width: 100%;
-    background: black;
+    background-color: rgba(0, 0, 0, 0.8);
     margin: 0;
-    z-index: 10;
+    z-index: 20;
     align-items: center;
     justify-content: center;
   }
@@ -329,23 +330,68 @@ img {
 }
 
 .hamburger {
-  width: 24px;
-  height: 20px;
-  flex-direction: column;
-  justify-content: space-between;
   display: none;
 }
 @media screen and (max-width: 768px) {
   .hamburger {
-    display: inline-flex;
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    z-index: 21;
   }
 }
 
-.hamburger__plank {
+.hamburger__plank1 {
   display: block;
+  position: absolute;
   background: white;
+  top: 16px;
   height: 4px;
+  width: 22px;
   border: 10px;
+  z-index: 21;
+}
+
+.hamburger__plank2 {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 24px;
+  height: 4px;
+  width: 22px;
+  border: 10px;
+  z-index: 21;
+}
+
+.hamburger__plank3 {
+  display: block;
+  position: absolute;
+  background: white;
+  top: 32px;
+  height: 4px;
+  width: 22px;
+  border: 10px;
+  z-index: 21;
+}
+
+.plank--none {
+  display: none;
+}
+
+.plank--active1 {
+  display: block;
+  top: 24px;
+  transform: rotate(-45deg);
+  transition: 0.3s;
+}
+
+.plank--active2 {
+  display: block;
+  top: 24px;
+  transform: rotate(45deg);
+  transition: 0.3s;
 }
 
 .header {
