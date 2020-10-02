@@ -8,6 +8,7 @@
    <link rel="stylesheet" href="css/layout/normalize.css">
    <link rel="stylesheet" href="css/main.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
    <title>Chocco</title>
 </head>
 
@@ -406,62 +407,88 @@
          </section>
          <section class="section order-section section--font-color--green">
             <div class="container">
-               <h2 class="section__title order-title">Закажите доставку</h2>
+               <h2 class="section__title">закажите доставку</h2>
                <form class="form">
+                  <input type="hidden" name="to" value="sad@mail.com">
                   <div class="form__col">
                      <div class="form__row">
-                        <div class="form__block">
-                           <div class="form__title">Имя</div><input type="text" class="form__input">
-                        </div>
-                        <div class="form__block">
-                           <div class="form__title">Телефон</div><input type="text" class="form__input">
-                        </div>
+                        <label class="form__block">
+                           <div class="form__title">Имя</div>
+                           <input type="text" name="name" class="form__input">
+                        </label>
+                        <label class="form__block">
+                           <div class="form__title">Телефон</div>
+                           <input type="text" name="phone" class="form__input">
+                        </label>
+
                      </div>
+
                      <div class="form__row">
-                        <div class="form__block">
-                           <div class="form__title">Улица</div><input type="text" class="form__input">
-                        </div>
+                        <label class="form__block">
+                           <div class="form__title">Улица</div>
+                           <input type="text" name="street" class="form__input">
+                        </label>
                      </div>
+
                      <div class="form__row">
-                        <div class="form__block">
-                           <div class="form__title">Дом</div><input type="text" class="form__input">
-                        </div>
-                        <div class="form__block">
-                           <div class="form__title">Корпус</div><input type="text" class="form__input">
-                        </div>
-                        <div class="form__block">
-                           <div class="form__title">Квартира</div><input type="text" class="form__input">
-                        </div>
-                        <div class="form__block">
-                           <div class="form__title">Этаж</div><input type="text" class="form__input">
-                        </div>
+
+                        <label class="form__block">
+                           <div class="form__title">Дом</div>
+                           <input type="text" name="house" class="form__input">
+                        </label>
+
+                        <label class="form__block">
+                           <div class="form__title">Корпус</div>
+                           <input type="text" name="part" class="form__input">
+                        </label>
+
+                        <label class="form__block">
+                           <div class="form__title">Квартира</div>
+                           <input type="text" name="apartment" class="form__input">
+                        </label>
+
+                        <label class="form__block">
+                           <div class="form__title">Этаж</div>
+                           <input type="text" name="floor" class="form__input">
+                        </label>
+
                      </div>
+
+
                   </div>
                   <div class="form__col">
                      <div class="form__row">
-                        <div class="form__block">
-                           <div class="form__title">Комментарий</div><textarea
-                              class="form__input form__input--textarea"></textarea>
-                        </div>
+                        <label class="form__block">
+                           <div class="form__title">Комментарий</div>
+                           <textarea name="comment" class="form__input form__input--textarea"></textarea>
+                        </label>
+
                      </div>
-                     <div class="form__controls">
-                        <div class="radio"><input type="radio" name="option" class="radio__elem">
+                     <div class="form__controls form__controls--margin">
+                        <label class="radio">
+                           <input type="radio" name="option" class="radio__elem">
                            <div class="radio__visible"></div>
                            <div class="radio__title">Потребуется сдача</div>
-                        </div>
-                        <div class="radio"><input type="radio" name="option" class="radio__elem">
+                        </label>
+                        <label class="radio">
+                           <input type="radio" name="option" class="radio__elem">
                            <div class="radio__visible"></div>
-                           <div class="radio__title">Оплата картой</div>
-                        </div>
+                           <div class="radio__title">Оплата по карте</div>
+                        </label>
                      </div>
                      <div class="form__controls">
-                        <div class="radio radio--checkbox"><input type="checkbox" class="radio__elem">
+                        <label class="radio radio--checkbox">
+                           <input type="checkbox" class="radio__elem">
                            <div class="radio__visible"></div>
                            <div class="radio__title">Не перезванивать</div>
-                        </div>
+                        </label>
                      </div>
-                     <div class="form__btns"><input type="submit" value="Заказать" class="btn btn--theme--green"><input
-                           type="reset" value="Очистить" class="btn btn--theme--transparent"></div>
+
+                     <div class="forms__btns">
+                        <button type="submit" class="btn btn--theme--green">Заказать</button>
+                        <button type="reset" class="btn btn--theme--transparent">Очистить</button>
+                     </div>
+
                   </div>
                </form>
             </div>
@@ -508,14 +535,28 @@
             </div>
          </div>
       </footer>
+      <div class="modal" id="modal">
+         <div class="modal__container">
+            <div class="modal__content">
+               Сообщение отправлено
+            </div>
+            <div class="modal__button-container">
+               <a href="#" class="app-submit-btn btn btn--theme--green">Закрыть</a>
+            </div>
+         </div>
+
+      </div>
+
    </section>
    <script src="/scripts/jquery-3.5.1.min.js"></script>
    <script src="/scripts/ops.js"></script>
    <script src="/scripts/tabs.js"></script>
    <script src="/scripts/slider.js"></script>
    <script src="/scripts/acco.js"></script>
+   <script src="/scripts/modals.js"></script>
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.js"></script>
 </body>
 
 </html>
