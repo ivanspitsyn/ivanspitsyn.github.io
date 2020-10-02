@@ -882,6 +882,16 @@ button:focus {
   }
 }
 
+.team-section {
+  margin-bottom: 57px;
+  height: 100vh;
+}
+@media screen and (max-width: 768px) {
+  .team-section {
+    margin-bottom: 157px;
+  }
+}
+
 .team__content {
   overflow: hidden;
   transition: height 0.3s;
@@ -908,7 +918,6 @@ button:focus {
 }
 
 .team__member {
-  height: 288px;
   margin-bottom: 20px;
 }
 

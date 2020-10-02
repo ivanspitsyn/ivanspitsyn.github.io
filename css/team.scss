@@ -9,6 +9,16 @@
    }
 }
 
+.team-section {
+   margin-bottom: 57px;
+   height: 100vh;
+
+   @include tablets {
+      margin-bottom: 157px;
+
+   }
+}
+
 .team__content {
    overflow: hidden;
    transition: height .3s;
@@ -38,7 +48,6 @@
 }
 
 .team__member {
-   height: 288px;
    margin-bottom: 20px;
 }
 
