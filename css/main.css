@@ -116,11 +116,9 @@ img {
   height: 20px;
   width: 20px;
 }
-
-.social-black {
+.social-icon :hover {
+  transition: 0.4s;
   fill: black;
-  height: 20px;
-  width: 20px;
 }
 
 .product__arrow {
@@ -961,6 +959,10 @@ button:focus {
 
 .t_active {
   opacity: 1;
+}
+
+.reviews-section {
+  height: 100vh;
 }
 
 .reviews__display {
