@@ -14,7 +14,9 @@
    height: 100vh;
 
    @include tablets {
-      margin-bottom: 157px;
+      margin-top: rem(50px);
+      margin-bottom: rem(157px);
+
 
    }
 }
@@ -110,4 +112,13 @@
 
 .t_active {
    opacity: 1;
+}
+
+.team__item.t_active .team__title:after {
+
+   font-size: 15px;
+   content: " ▲";
+   // transition: 2.9s;
+
+
 }

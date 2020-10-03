@@ -48,21 +48,21 @@ $(".team__title").click((e) => {
 }
 )
 
-$(document).ready(() => {
-    $('.team__title').on('click', function (e) {
-        e.preventDefault();
-        // $('.team__title').removeClass('noMagic')
-        if ($('.team__title').hasClass('noMagic')
-        ) {
-            $('.team__title').removeClass('noMagic')
+// $(document).ready(()=> {
+        //     $('.team__title').on('click', function (e) {
+        //         e.preventDefault();
+        //         // $('.team__title').removeClass('noMagic')
+        //         if ($('.team__title').hasClass('noMagic')
+        //         ) {
+        //             $('.team__title').removeClass('noMagic')
 
-        }
+        //         }
 
-        else ($(this).toggleClass('noMagic')
-        )        // $(this).addClass('noMagic1')
-    })
-}
-)
+        //         else ($(this).toggleClass('noMagic')
+        //         )        // $(this).addClass('noMagic1')
+        //     })
+        // }
+        // )
 
 
 

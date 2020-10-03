@@ -947,7 +947,8 @@ button:focus {
 }
 @media screen and (max-width: 768px) {
   .team-section {
-    margin-bottom: 157px;
+    margin-top: 2.7777777778rem;
+    margin-bottom: 8.7222222222rem;
   }
 }
 
@@ -1034,6 +1035,11 @@ button:focus {
 
 .t_active {
   opacity: 1;
+}
+
+.team__item.t_active .team__title:after {
+  font-size: 15px;
+  content: " ▲";
 }
 
 .reviews-section {
