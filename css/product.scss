@@ -23,6 +23,59 @@
     }
  }
 
+ .product__hidden {
+    right: 227px;
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    //  height: 344px;
+    width: 273px;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.8);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.06);
+    backdrop-filter: blur(40px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 4px;
+ }
+
+ .container__ingredient {
+    display: flex;
+    //  flex-direction: row;
+    margin: 30px;
+    margin-bottom: 0;
+    flex-direction: column;
+ }
+
+ .product__ingred {
+    display: flex;
+    margin-bottom: 27px;
+
+ }
+
+ .img_ingred {
+    margin-right: 14px;
+ }
+
+ .name_ingred {
+    width: 127px;
+    margin-right: 16px;
+    font-style: bold;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+ }
+
+ .weight_ingred {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+ }
+
+
+
+
  .slider__arrow-prev {
     display: flex;
     align-items: center;
@@ -66,6 +119,8 @@
        background: url("/img/product/choccos.png ") no-repeat;
        background-size: contain;
     }
+
+
  }
 
  .product__item-image2 {
@@ -92,9 +147,16 @@
     background-size: contain;
     background-position: center;
 
+    &:hover .product__hidden {
+       opacity: 1;
+       transition: .3s;
+
+    }
+
     @include tablets {
        display: none;
     }
+
  }
 
  .product__item-title {
