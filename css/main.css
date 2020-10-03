@@ -720,6 +720,7 @@ button:focus {
 .product__hidden {
   right: 227px;
   opacity: 0;
+  visibility: hidden;
   display: flex;
   position: absolute;
   width: 273px;
@@ -837,6 +838,7 @@ button:focus {
 }
 .item__ingredients:hover .product__hidden {
   opacity: 1;
+  visibility: visible;
   transition: 0.3s;
 }
 @media screen and (max-width: 768px) {

@@ -26,6 +26,7 @@
  .product__hidden {
     right: 227px;
     opacity: 0;
+    visibility: hidden;
     display: flex;
     position: absolute;
     //  height: 344px;
@@ -149,6 +150,7 @@
 
     &:hover .product__hidden {
        opacity: 1;
+       visibility: visible;
        transition: .3s;
 
     }
