@@ -13,4 +13,8 @@
    display: inline-flex;
    margin-right: 3px;
 
+   :hover {
+      transition: 0.9s;
+      fill: black;
+   }
 }

@@ -117,10 +117,6 @@ img {
   height: 20px;
   width: 20px;
 }
-.social-icon :hover {
-  transition: 0.4s;
-  fill: black;
-}
 
 .product__item-svg {
   fill: #000000;
@@ -1483,4 +1479,8 @@ button:focus {
 .social__item {
   display: inline-flex;
   margin-right: 3px;
+}
+.social__item :hover {
+  transition: 0.9s;
+  fill: black;
 }

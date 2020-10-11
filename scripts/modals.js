@@ -1,18 +1,18 @@
-const validateFields = (form, fieldsArray)=> {
+const validateFields = (form, fieldsArray) => {
 
-    fieldsArray.forEach(field=> {
+    fieldsArray.forEach(field => {
         field.removeClass("input-error");
-        if(field.val().trim() ===""){
+        if (field.val().trim() === "") {
             field.addClass("input-error");
         }
     });
 
     const errorFields = form.find(".input-error");
-    return errorFields.length === 0; 
+    return errorFields.length === 0;
 }
 
 
-$('.form').submit(e=>{
+$('.form').submit(e => {
     e.preventDefault();
 
     const form = $(e.currentTarget);
@@ -27,11 +27,11 @@ $('.form').submit(e=>{
     modal.removeClass("error-modal");
 
     const isValid = validateFields(form, [name, phone, comment, to])
-    
-    
-    if(isValid){
-    const request = $.ajax({
-            url: "https://webdev-api.loftschool.com/sendmail",
+
+
+    if (isValid) {
+        const request = $.ajax({
+            url: "http://localhost:3000/",
             method: "post",
             data: {
                 name: name.val(),
@@ -39,34 +39,34 @@ $('.form').submit(e=>{
                 comment: comment.val(),
                 to: to.val(),
             },
-             
+
             error: data => {
-                
+
             }
-         });
-         request.done(data =>{
+        });
+        request.done(data => {
             content.text(data.message);
-                
-         });
-         request.fail(data =>{
+
+        });
+        request.fail(data => {
             const message = data.responseJSON.message;
             content.text(message);
             modal.addClass("error-modal");
 
-            
 
-         });
-         request.always(()=>{
+
+        });
+        request.always(() => {
             $.fancybox.open({
                 src: "#modal",
                 type: "inline"
-            }); 
-         })
+            });
+        })
     }
-     
+
 });
 
-$(".app-submit-btn").click(e=>{
+$(".app-submit-btn").click(e => {
     e.preventDefault();
 
     $.fancybox.close();
